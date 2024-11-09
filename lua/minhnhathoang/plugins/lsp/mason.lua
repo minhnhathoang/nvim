@@ -1,7 +1,5 @@
 return {
-
   "williamboman/mason.nvim",
-
   dependencies = {
     "williamboman/mason-lspconfig.nvim",
     "WhoIsSethDaniel/mason-tool-installer.nvim",
@@ -29,19 +27,16 @@ return {
     mason_lspconfig.setup({
       -- list of servers for mason to install
       ensure_installed = {
-        "ts_ls",
-        "html",
-        "cssls",
-        "tailwindcss",
-        "svelte",
-        "lua_ls",
-        "graphql",
         "gopls",
+        "golangci_lint_ls",
+
+        "templ",
+
+        "ts_ls",
+        "lua_ls",
         "bufls",
-        "emmet_ls",
         "prismals",
         "pyright",
-        "templ",
       },
       -- auto-install configured servers (with lspconfig)
       automatic_installation = true, -- not the same as ensure_installed
@@ -56,8 +51,10 @@ return {
         "debugpy", -- python debugger
         "templ",
         "pylint", -- python linter
-        "eslint_d", -- js linter
 
+        "gospel",
+        "nilaway",
+        "delve",
         "golines", -- go formatter
         "goimports", -- go formatter
         "golangci-lint",
