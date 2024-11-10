@@ -10,7 +10,6 @@ return {
 				"javascript",
 				"typescript",
 				"python",
-				"go",
 				"sql",
 				"make",
 				"dockerfile",
@@ -19,6 +18,8 @@ return {
 				"terraform",
 				"proto",
 				"html",
+
+				"go", "gomod", "gosum", "gotmpl", "gowork"
 			},
 
 			sync_install = false,

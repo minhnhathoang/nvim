@@ -21,6 +21,7 @@ return {
           package_pending = "➜",
           package_uninstalled = "✗",
         },
+        border = "rounded",
       },
     })
 
@@ -32,11 +33,11 @@ return {
 
         "templ",
 
-        "ts_ls",
         "lua_ls",
-        "bufls",
         "prismals",
-        "pyright",
+        "jsonls",
+        "bashls",
+        "dockerls"
       },
       -- auto-install configured servers (with lspconfig)
       automatic_installation = true, -- not the same as ensure_installed
@@ -44,22 +45,15 @@ return {
 
     mason_tool_installer.setup({
       ensure_installed = {
-        "prettier", -- prettier formatter
         "stylua", -- lua formatter
-        "isort", -- python formatter
-        "black", -- python formatter
-        "debugpy", -- python debugger
-        "templ",
-        "pylint", -- python linter
 
         "gospel",
         "nilaway",
-        "delve",
         "golines", -- go formatter
         "goimports", -- go formatter
         "golangci-lint",
         "gotests",
-        "go-debug-adapter",
+        "gotestsum"
       },
     })
   end,

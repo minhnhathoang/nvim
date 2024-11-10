@@ -78,6 +78,13 @@ return {
       vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
     end
 
+    --vim.cmd([[
+    --  highlight DiagnosticSignError guifg=#FF6C6B guibg=none
+    --  highlight DiagnosticSignWarn  guifg=#ECBE7B guibg=none
+    --  highlight DiagnosticSignHint  guifg=#98BE65 guibg=none
+    --  highlight DiagnosticSignInfo  guifg=#51AFEF guibg=none
+    --]])
+
     mason_lspconfig.setup_handlers({
       -- default handler for installed servers
       function(server_name)
