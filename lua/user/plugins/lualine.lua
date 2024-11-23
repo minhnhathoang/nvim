@@ -3,7 +3,7 @@ return {
 	config = function()
 		require("lualine").setup({
 			options = {
-				theme = "ayu_dark",
+				theme = "16color",
 				section_separators = { left = "", right = "" },
 				sections = {
 					lualine_a = {

@@ -182,6 +182,7 @@ vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' }
 
 vim.cmd('colorscheme darkblue')
 vim.cmd([[ highlight NeoTreeDirectoryName guifg=#dcdcdc gui=bold]])
+vim.cmd([[ highlight NeoTreeTitleBar guifg=#dcdcdc gui=bold]])
 
 -- TIP: Disable arrow keys in normal mode
 -- vim.keymap.set('n', '<left>', '<cmd>echo "Use h to move!!"<CR>')

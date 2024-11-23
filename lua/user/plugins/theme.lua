@@ -1,4 +1,7 @@
 return
+{
+
+}
  --{
  --    "arturfil/night-wolf.nvim",
  --
@@ -10,36 +13,47 @@ return
  --    end
  --}
 
+ --{
+ --    "arturfil/night-wolf.nvim",
+ --
+ --    lazy = false,
+ --    name = "night-wolf",
+ --    priority = 1000,
+ --    config = function()
+ --        vim.cmd.colorscheme "night-wolf"
+ --    end
+ --}
+
+ --{
+ --    "folke/tokyonight.nvim",
+ --        priority = 1000,
+ --        config = function()
+ --            vim.cmd("colorscheme tokyonight")
+ --
+ --            require("tokyonight").setup({
+ --                style = "night"
+ --            })
+ --        end
+ --}
+--
 -- {
---     "folke/tokyonight.nvim",
+--         "catppuccin/nvim",
+--         name = "catppuccin",
+--         lazy = false,
 --         priority = 1000,
 --         config = function()
---             vim.cmd("colorscheme tokyonight")
---
---             require("tokyonight").setup({
---                 style = "night"
+--             require("catppuccin").setup({
+--                 -- flavour = "latte",
+--                 color_overrides = {
+--                     mocha = {
+--                          base = "#1b1f20",
+--                          mantle = "#1b1f20"
+--                     }
+--                 }
 --             })
+--             vim.cmd.colorscheme "catppuccin"
 --         end
--- }
-
- {
-         "catppuccin/nvim",
-         name = "catppuccin",
-         lazy = false,
-         priority = 1000,
-         config = function()
-             require("catppuccin").setup({
-                 -- flavour = "latte",
-                 color_overrides = {
-                     mocha = {
-                          base = "#1b1f20",
-                          mantle = "#1b1f20"
-                     }
-                 }
-             })
-             vim.cmd.colorscheme "catppuccin"
-         end
-}
+--}
 
  --{
  --    "ellisonleao/gruvbox.nvim",
