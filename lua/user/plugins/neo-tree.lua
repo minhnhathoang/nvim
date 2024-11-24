@@ -21,7 +21,7 @@ return {
         },
       },
       filtered_items = {
-        hide_dotfiles = false,
+        hide_dotfiles = true,
         hide_gitignored = false,
       },
     },
